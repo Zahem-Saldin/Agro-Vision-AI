@@ -1,5 +1,7 @@
 Detecting and Monitoring Agricultural Lands in Sri Lanka using Remote Sensing and Deep Learning
 
+![Alt text](images/Crop_Prediction.gif)
+
 Project Overview
 
 Agriculture is the cornerstone of Sri Lanka’s economy, yet traditional monitoring relies on manual field inspections and survey-based reporting that often lack timely, large-scale insights. This project introduces an automated, data-centric framework that integrates Remote Sensing, Deep Learning, and Web-based Visualization to provide real-time monitoring for three dominant crops: Paddy, Tea, and Coconut.
