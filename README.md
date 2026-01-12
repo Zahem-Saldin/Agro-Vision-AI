@@ -72,6 +72,7 @@ Research Impact
 This project bridges the gap between fragmented academic research and practical agricultural management. By providing timely data, it empowers stakeholders to proactively respond to climate variability, fertilizer shortages, and economic crises, ultimately supporting sustainable food security in Sri Lanka.
 
 App Overview 
+
 ![Image](https://github.com/user-attachments/assets/b53efa45-3020-4bd4-8af0-925ee765d163)
 ![Image](https://github.com/user-attachments/assets/4af67c68-d878-4e05-96a7-2531fc94d4f3)
 ![Image](https://github.com/user-attachments/assets/34d9e969-90ec-46bf-80c8-964e9d5d7342)
