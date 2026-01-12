@@ -1,6 +1,6 @@
 Detecting and Monitoring Agricultural Lands in Sri Lanka using Remote Sensing and Deep Learning
 
-![Alt text](images/Crop_Prediction.gif)
+<img src="images/Crop_Prediction.gif" alt="Demo" width="400"/>
 
 Project Overview
 
