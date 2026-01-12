@@ -1,0 +1,151 @@
+/* -------------------- Container -------------------- */
+.upload-container {
+  max-width: 1400px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* -------------------- Upload Box -------------------- */
+.upload-box {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Headline inside upload box */
+.upload-headline {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* -------------------- Upload Row (Icon + Buttons) -------------------- */
+.upload-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Upload Icon */
+.upload-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 12px;
+  background: #e0e0e0;
+  transition: background 0.2s ease;
+}
+
+.upload-icon:hover {
+  background: #d0d0d0;
+}
+
+.upload-icon svg {
+  width: 50px;
+  height: 50px;
+  color: #333;
+}
+
+/* Selected Files */
+.selected-files {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.clear-btn {
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #d9363e;
+}
+
+/* Upload Button */
+.upload-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #45a049;
+}
+
+.upload-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* -------------------- Image Grid -------------------- */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------- Image Card -------------------- */
+.image-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.image-card:hover {
+  transform: translateY(-4px);
+}
+
+.image-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* -------------------- Productivity Section -------------------- */
+.productivity-section {
+  margin-top: 0.75rem;
+}
+
+.productivity-bar {
+  height: 12px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}

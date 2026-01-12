@@ -1,0 +1,30 @@
+import ee
+ee.Initialize(project='skepter2k')
+
+locations = {
+    'Coconut_126': ee.Geometry.Point(79.8683383762022, 7.42585629628913),
+    'Coconut_127': ee.Geometry.Point(79.8643054144779, 7.42844584346588),
+    'Coconut_128': ee.Geometry.Point(79.8875585858706, 7.40662021363904),
+    'Coconut_129': ee.Geometry.Point(79.9001587566085, 7.41108699410965),
+    'Coconut_130': ee.Geometry.Point(79.8990934496548, 7.364246449677),
+    'Coconut_131': ee.Geometry.Point(79.863420179097, 7.3722341763035),
+    'Coconut_132': ee.Geometry.Point(79.8614205944023, 7.37685746152678),
+    'Coconut_133': ee.Geometry.Point(79.8590467601507, 7.38080762037158),
+    'Coconut_134': ee.Geometry.Point(79.8615301917263, 7.36909771590003),
+    'Coconut_135': ee.Geometry.Point(79.8701006707337, 7.61558062971226),
+    'Coconut_136': ee.Geometry.Point(79.8674719647701, 7.63589371252645),
+    'Coconut_137': ee.Geometry.Point(79.8746449291757, 7.64021903841313),
+    'Coconut_138': ee.Geometry.Point(79.8598755439893, 7.64124976153567),
+    'Coconut_139': ee.Geometry.Point(79.8295032182646, 7.6530993967192),
+    'Coconut_140': ee.Geometry.Point(79.8437232457102, 7.66188762730504),
+    'Coconut_141': ee.Geometry.Point(79.8516037694292, 7.68023197152959),
+    'Coconut_142': ee.Geometry.Point(79.9559354371338, 7.52465168084839),
+    'Coconut_143': ee.Geometry.Point(79.9415155633631, 7.52670787610172),
+    'Coconut_144': ee.Geometry.Point(79.9429144813401, 7.53103239376781),
+    'Coconut_145': ee.Geometry.Point(79.93764482203, 7.53048751907816),
+    'Coconut_146': ee.Geometry.Point(79.9491720139529, 7.53727683734918),
+    'Coconut_147': ee.Geometry.Point(79.9518802431865, 7.54470401677132),
+    'Coconut_148': ee.Geometry.Point(79.9464776325609, 7.5471483802395),
+    'Coconut_149': ee.Geometry.Point(79.9405424870735, 7.54263807808931),
+    'Coconut_150': ee.Geometry.Point(79.8700034430361, 7.58497707154211),
+}

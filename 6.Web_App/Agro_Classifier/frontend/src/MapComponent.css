@@ -1,0 +1,51 @@
+.map-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.leaflet-container {
+  background-color: black !important;
+  height: 100%;
+  width: 100%;
+}
+
+/* Draw toolbar */
+.leaflet-draw-toolbar {
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Zoom buttons */
+.leaflet-control-zoom {
+  background-color: rgba(0, 123, 255, 0.8);
+  border-radius: 8px;
+}
+
+/* Attribution text */
+.leaflet-control-attribution {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Copy KML button */
+.copy-kml-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #28a745;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.copy-kml-btn:hover {
+  background: #218838;
+}
