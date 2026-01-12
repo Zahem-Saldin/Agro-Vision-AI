@@ -70,3 +70,12 @@ Coconut: ∼4.7 t/ha
 Research Impact
 
 This project bridges the gap between fragmented academic research and practical agricultural management. By providing timely data, it empowers stakeholders to proactively respond to climate variability, fertilizer shortages, and economic crises, ultimately supporting sustainable food security in Sri Lanka.
+
+App Overview 
+![Image](https://github.com/user-attachments/assets/b53efa45-3020-4bd4-8af0-925ee765d163)
+![Image](https://github.com/user-attachments/assets/4af67c68-d878-4e05-96a7-2531fc94d4f3)
+![Image](https://github.com/user-attachments/assets/34d9e969-90ec-46bf-80c8-964e9d5d7342)
+![Image](https://github.com/user-attachments/assets/3d0f52ab-50ec-4898-8ecb-b659491b278e)
+![Image](https://github.com/user-attachments/assets/31168811-eb68-469e-92b3-0d4b297e18b4)
+![Image](https://github.com/user-attachments/assets/2d356fbf-22d5-4d76-a108-9a11f3cfbd7b)
+![Image](https://github.com/user-attachments/assets/21d21631-9358-42cf-9a5e-3c197cdd10d3)
