@@ -5,6 +5,14 @@ from typing import List, Dict
 from datetime import datetime
 import motor.motor_asyncio
 from bson import ObjectId
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+MONGODB_URI = os.getenv("MONGODB_URI")
+DB_NAME = os.getenv("DB_NAME")
 
 app = FastAPI(title="Crop Growth Prediction API")
 
@@ -23,10 +31,8 @@ app.add_middleware(
 )
 
 # ---------- MongoDB Connection ----------
-client = motor.motor_asyncio.AsyncIOMotorClient(
-    "mongodb+srv://zahem3:20626@cluster0.zkky4km.mongodb.net/icorn"
-)
-db = client.Agri
+client = motor.motor_asyncio.AsyncIOMotorClient(MONGODB_URI)
+db = client[DB_NAME]
 collections = {
     "paddy": db.paddy,
     "tea": db.tea,
@@ -78,42 +84,3 @@ async def delete_prediction(collection, doc_id: str):
     if result.deleted_count == 0:
         raise HTTPException(status_code=404, detail="Document not found")
     return {"status": "success", "deleted_id": doc_id}
-
-# ---------- POST Endpoints ----------
-@app.post("/predictions_paddy")
-async def save_predictions_paddy(payload: SaveRequest):
-    return await save_predictions(collections["paddy"], payload, "paddy")
-
-@app.post("/predictions_tea")
-async def save_predictions_tea(payload: SaveRequest):
-    return await save_predictions(collections["tea"], payload, "tea")
-
-@app.post("/predictions_coconut")
-async def save_predictions_coconut(payload: SaveRequest):
-    return await save_predictions(collections["coconut"], payload, "coconut")
-
-# ---------- GET Endpoints ----------
-@app.get("/predictions_paddy")
-async def get_predictions_paddy():
-    return await get_all_predictions_from(collections["paddy"])
-
-@app.get("/predictions_tea")
-async def get_predictions_tea():
-    return await get_all_predictions_from(collections["tea"])
-
-@app.get("/predictions_coconut")
-async def get_predictions_coconut():
-    return await get_all_predictions_from(collections["coconut"])
-
-# ---------- DELETE Endpoints ----------
-@app.delete("/predictions_paddy/{doc_id}")
-async def delete_prediction_paddy(doc_id: str):
-    return await delete_prediction(collections["paddy"], doc_id)
-
-@app.delete("/predictions_tea/{doc_id}")
-async def delete_prediction_tea(doc_id: str):
-    return await delete_prediction(collections["tea"], doc_id)
-
-@app.delete("/predictions_coconut/{doc_id}")
-async def delete_prediction_coconut(doc_id: str):
-    return await delete_prediction(collections["coconut"], doc_id)
